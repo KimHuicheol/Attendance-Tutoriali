@@ -3,8 +3,8 @@
     <table class="table table-bordered table-condensed user-table">
         <tr>
             <td>時間管理票表</td>
-            <td>指定勤務時間</td>
-            <td>基本時間</td>
+            <td>指定勤務時間 : <%= format_basic_info(@user.work_time) %></td>
+            <td>基本時間 :     <%= format_basic_info(@user.basic_time) %></td>
             <td>月初日</td>
         </tr>
         <tr>
@@ -15,4 +15,3 @@
         </tr>
     </table>
 </div>
-<h1><%= @user.name %>, <%= @user.email %></h1>
