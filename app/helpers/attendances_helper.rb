@@ -8,4 +8,9 @@ module AttendancesHelper
     # どれも当てはまらなかった場合はfalseを返す。
     false
   end
+  
+  # 出勤時間と退勤時間を取得し、在社時間を計算して返す。
+  def working_times(start, finish)
+    format("%.2f", (((finish - start) / 60) / 60.0))
+  end
 end
